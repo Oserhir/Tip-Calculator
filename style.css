@@ -47,6 +47,10 @@ body {
   padding: none;
 }
 
+#btnDecrease {
+  background: rgba(162, 167, 241, 0.288)
+}
+
 .buttonContainer {
   background: #8990ec;
   display: grid;
@@ -95,4 +99,16 @@ body {
 
 .total {
   font-size: 2rem;
+}
+
+#Danger {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  color: rgb(241, 211, 41);
+  margin-top: 8px;
+}
+
+.hidden {
+  display: none;
 }
