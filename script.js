@@ -15,8 +15,15 @@ const calculateBill = () => {
   if (isNaN(tip)) {
     tip = 0;
   }
-  const numberPerson = parseInt(numberOfPeopleDiv.innerText);
+  const numberPerson = parseInt(numberOfPeople);
   const tipAmount = bill / numberPerson;
   const total = tipAmount + tipAmount * tip;
   perPersonTotalDiv.innerText = `$${total.toFixed(2)}`;
 };
+
+// ** Splits the bill between more people **
+increasePeople.addEventListener("click", () => {
+  numberOfPeople++;
+  numberOfPeopleDiv.innerText = numberOfPeople;
+  calculateBill();
+});
