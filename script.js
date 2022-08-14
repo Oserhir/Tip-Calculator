@@ -27,3 +27,15 @@ increasePeople.addEventListener("click", () => {
   numberOfPeopleDiv.innerText = numberOfPeople;
   calculateBill();
 });
+
+// ** Splits the bill between fewer people **
+decreasePeople.addEventListener("click", () => {
+  if (numberOfPeople > 1) {
+    numberOfPeople--;
+    numberOfPeopleDiv.innerText = numberOfPeople;
+    calculateBill();
+  } else {
+    throw "Hey! You cannot have less than 1 person!";
+    return;
+  }
+});
